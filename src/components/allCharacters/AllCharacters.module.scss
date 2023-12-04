@@ -1,0 +1,14 @@
+.cardContainerDiv{
+    display: grid;
+    padding: 2%;
+    width: 100%;
+    grid-template-columns: repeat(3 , 25%);
+    gap: 3%;
+    overflow-y: scroll;
+    height: 100%
+}
+.paginationDiv{
+    width: 100%;
+    padding: 2%;
+  
+}
