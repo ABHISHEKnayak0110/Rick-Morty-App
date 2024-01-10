@@ -41,9 +41,21 @@ const getByCharactersById = async (id) => {
          console.log(error)
     }
 }
+
+const getByEpicodeMulti = async (id) => {
+    try {
+        let url = `${urls.GET_EPICODES}/${id}`
+        const data = await axios(url)
+
+        return data?.data
+    } catch (error) {
+         console.log(error)
+    }
+}
 export {
     getByCharacters,
     getByLocations,
     getByEpicode,
-    getByCharactersById
+    getByCharactersById,
+    getByEpicodeMulti
 }
