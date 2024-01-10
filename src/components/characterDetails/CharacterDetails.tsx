@@ -77,6 +77,7 @@ const CharacterDetails = () => {
  numberActualList?.map((e:any) => {
     if(list?.includes(e)){
      const epi = store?.find((id :any) => id?.id == e)
+     /*pushing result for already present in data base */
      Result.push(epi)
     }else{
       remianingEpicodeNumber.push(e)
